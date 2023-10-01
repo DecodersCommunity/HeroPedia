@@ -3,6 +3,77 @@ html {
   margin: 0;
   padding: 0;
 }
+
+ :root {
+        --col1: #222;
+        --col2: black;
+        --swiper-image-ratio: 34%;
+        /* ratio 16:9 = 56.25% */
+        --swiper-width: 50%;
+        --swiper-inactive-scale: .85;
+        /* makes the other slide smaller */
+        /* responsive settings */
+        --swiper-mobile-width: 90%;
+        --swiper-mobile-inactive-scale: 1;
+    }
+
+    h2.card-title {
+        color: var(--col2);
+    }
+
+    .to-top {
+        color: #fff;
+        position: fixed;
+        bottom: 16px;
+        right: 32px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 32px;
+        background: #1f1f1f;
+        text-decoration: none;
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.4s;
+        z-index: 999;
+    }
+
+    .bottom {
+        color: #fff;
+        position: fixed;
+        top: 16px;
+        right: 32px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 32px;
+        background: #1f1f1f;
+        text-decoration: none;
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.4s;
+        z-index: 10;
+    }
+
+    .to-top.active,
+    .bottom.active {
+        bottom: 32px;
+        pointer-events: auto;
+        opacity: 1;
+    }
+
+    .to-top:hover,
+    .bottom:hover {
+        color: #fff;
+        text-decoration: none;
+    }
+
 body {
   font-family: "Ninja Naruto", arial;
 }
@@ -134,7 +205,7 @@ body::-webkit-scrollbar-thumb {
   margin-bottom: 100px;
   margin-top: 40px;
 }
-.search: hover {
+.search:hover {
   box-shadow: 0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee,
     0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee;
 }
