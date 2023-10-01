@@ -65,8 +65,8 @@ Please refer to the [Contributing Guide](CONTRIBUTING.md) to know more about the
 
 ## Contributors
 
-<a href="https://github.com/DecodersCommunity/heropedia/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=DecodersCommunity/heropedia" />
+<a href="https://github.com/DecodersCommunity/HeroPedia/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=DecodersCommunity/HeroPedia" />
 </a>
 
 ## License
