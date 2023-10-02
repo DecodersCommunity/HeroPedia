@@ -1,4 +1,4 @@
-<p align="center"><img src="./assets/marvel-vs-dc-4k-iu.jpg" height="50%" width="80%" /></p>
+![Hero Wallpaper](./assets/marvel-vs-dc-4k-iu-small.png)
 
 # HeroPedia
 
