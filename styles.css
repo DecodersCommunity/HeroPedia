@@ -17,6 +17,32 @@ html {
         --swiper-mobile-inactive-scale: 1;
     }
 
+body.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+header.dark-mode {
+  background-color: #444;
+}
+
+button.dark-mode {
+  background-color: #444;
+  color: #fff;
+}
+
+#btn {
+  background-color: #ccc;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+#btn:hover {
+  background-color: #aaa;
+}
+
+
     h2.card-title {
         color: var(--col2);
     }
