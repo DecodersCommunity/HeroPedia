@@ -511,6 +511,19 @@ h2 {
   font-size: 20px;
   color: black;
 }
+/* Dark mode styles */
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* Styles for elements in dark mode */
+.dark-mode a {
+  color: #bb86fc; /* Purple color for links in dark mode */
+}
+
+/* Additional dark mode styles for your specific elements */
+
 body {
   background-color: white;
   font-family: "Ninja Naruto", arial;
