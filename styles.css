@@ -3,6 +3,18 @@ html {
   margin: 0;
   padding: 0;
 }
+/* Dark mode styles */
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* Styles for elements in dark mode */
+.dark-mode a {
+  color: #bb86fc; /* Purple color for links in dark mode */
+}
+
+/* Additional dark mode styles for your specific elements */
 
 :root {
   --col1: #222;
