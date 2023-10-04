@@ -98,3 +98,26 @@ document.addEventListener("click", function (event) {
     }
 });
 });
+
+
+searchBox.addEventListener("keydown", (event) => {
+    if (event.key === "Enter") {
+        // Enter key was pressed, close the suggestion list
+        closeSuggestionList();
+    }
+});
+
+function handleSuggestionClick(event) {
+    // Get the text content of the clicked suggestion
+    const selectedSuggestion = event.target.textContent;
+
+    // Set the search input value to the selected suggestion
+    document.getElementById("searchInput").value = selectedSuggestion;
+
+    // Trigger the search function with the selected suggestion
+    search();
+
+    // Close the suggestion list
+    closeSuggestionList();
+}
+
