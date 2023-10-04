@@ -76,3 +76,21 @@ function handleSuggestionClick(event) {
 
 // Add click event listener to the suggestion list
 suggestionList.addEventListener("click", handleSuggestionClick);
+
+
+// Function to close the suggestion list
+function closeSuggestionList() {
+    suggestionList.style.display = "none";
+    suggestionList.style.border = "none";
+}
+
+// Event listener to close suggestion list when clicking outside
+document.addEventListener("click", function (event) {
+    const isSuggestionListClicked = suggestionList.contains(event.target);
+    const isSearchBoxClicked = searchBox.contains(event.target);
+    
+    if (!isSuggestionListClicked && !isSearchBoxClicked) {
+        closeSuggestionList();
+    }
+});
+
