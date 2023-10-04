@@ -1,3 +1,5 @@
+document.addEventListener("DOMContentLoaded", function () {
+
 // Function to filter and show/hide cards based on search input
 function search() {
     // Get the search input value and convert it to lowercase
@@ -37,4 +39,5 @@ searchInput.addEventListener("keydown", function (event) {
         event.preventDefault(); // Prevent the default form submission
         search(); // Call the search function
     }
+});
 });
