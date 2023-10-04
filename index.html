@@ -55,7 +55,8 @@
                     </div>
                 </div>
                 <form class="nosubmit">
-                    <input class="nosubmit" type="search" placeholder="Search for Character">
+                    <input id="searchInput" class="nosubmit" type="search" placeholder="Search for Character" >
+                    <ul id="suggestion-list"></ul>
                 </form>
     </div>
 
@@ -235,35 +236,9 @@
                     </div>
                 </div>
             </div> 
-          
-          
-          
-          
-          <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
-                <div class="row no-gutters">
-                    <div class="col-md-4">
-
-                        <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
-                        <img src="./images/thor.jpg" alt="Thor" height="390px" width="300px">
-
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-
-                            <!-- Name of your superhero-->
-                            <h2 class="card-title">Thor</h2>
-
-                            <!-- Description of your superhero-->
-                            <p class="card-text">Thor is a prominent god in Germanic paganism. In Norse mythology, he is a hammer-wielding god associated with lightning, thunder, storms, sacred groves and trees, strength, the protection of humankind, hallowing, and fertility. Thor, deity common to all the early Germanic peoples, a great warrior represented as a red-bearded, middle-aged man of enormous strength, an implacable foe to the harmful race of giants but benevolent toward mankind. His figure was generally secondary to that of the god Odin, who in some traditions was his father; but in Iceland, and perhaps among all northern peoples except the royal families, he was apparently worshiped more than any other god. There is evidence that a corresponding deity named Thunor, or Thonar, was worshiped in England and continental Europe, but little is known about him. </p>
-                            <hr>
-                             <!-- Contributors name-->
-                            <p>Contributed by- Vipin Maurya</p>
-                        </div>
-                    </div>
-                </div>
-            </div> 
 
                           <!-- Adding new profile here -->
+
             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -290,71 +265,6 @@ Doctor Strange's transition to film retained his complex character, mystical abi
                 </div>
             </div> 
 
-
-             <!-- Adding new profile here -->
-
-            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
-                <div class="row no-gutters">
-                    <div class="col-md-4">
-
-                        <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
-                        <img src="./images/captain-america-by-harsh.jpg" alt="CaptainAmerica" height="390px" width="300px">
-
-                    </div>
-                    
-                    <div class="col-md-8">
-                        <div class="card-body">
-
-                            <!-- Name of your superhero-->
-                            <h2 class="card-title">Captain America</h2>
-
-                            <!-- Description of your superhero-->
-                            <p class="card-text"> Captain America, a beloved Marvel Comics character, was created by Joe Simon and Jack Kirby and made his debut in 1941 during the height of World War II. Steve Rogers, his alter ego, was a frail and determined young man who, through a government experiment, transformed into a super-soldier with enhanced strength, agility, and endurance. Clad in his iconic red, white, and blue costume, Captain America wields a nearly indestructible vibranium shield, which he uses both defensively and offensively in his battles against villains and threats to humanity.
-Captain America's journey extended beyond the comic pages to the silver screen, with actor Chris Evans portraying him in the Marvel Cinematic Universe (MCU). Evans donned the shield in several films, including "Captain America: The First Avenger" (2011), "Captain America: The Winter Soldier" (2014), and "Captain America: Civil War" (2016). These movies not only showcased his action-packed adventures but also explored his character's moral dilemmas and his role as a leader within the Avengers. Captain America's appearances in the MCU contributed significantly to his enduring popularity and cemented his status as a cultural icon. </p>
-                            <hr>
-                             <!-- Contributors name-->
-                            <p>Contributed by- Harsh Gupta</p>
-                        </div>
-                    </div>
-                </div>
-            </div>    
-
-            
-            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
-                <div class="row no-gutters">
-                    <div class="col-md-4">
-
-                        <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
-                        <img src="./images/blackWidow.jpg" alt="BlackWidow" height="390px" width="300px">
-
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-
-                            <!-- Name of your superhero-->
-                            <h2 class="card-title">Black Widow</h2>
-
-                            <!-- Description of your superhero-->
-                            <p class="card-text"> The first and best-known Black Widow is a Russian agent trained as a spy, 
-                                martial artist, and sniper, and outfitted with an arsenal of high-tech weaponry, including a pair of 
-                                wrist-mounted energy weapons dubbed her "Widow's Bite". She wears no costume during her first few
-                                appearances but simply evening wear and a veil. Romanova eventually defects to the U.S. for reasons
-                                that include her love for the reluctant-criminal turned superhero archer, Hawkeye.After their breakup, the Widow moves to Los Angeles and becomes leader of the newly created and short-lived super team known as The Champions, consisting of her, Ghost Rider (Johnny Blaze), Hercules (with whom she has a brief romance), and former X-Men Angel and Iceman.
-
-Her friends usually call her "Natasha", the informal version of "Natalia". She has sometimes chosen the last-name alias "Romanoff". She has hinted to be a descendant of the deposed House of Romanov and a relation to Nicholas II of Russia.
-
-</p>
-                            <p><a href="https://en.wikipedia.org/wiki/Black_Widow_(Natasha_Romanova)" target="_blank">Black_Widow</a>
-</p>
-                            <hr>
-                             <!-- Contributors name-->
-                            <p>Contributed by- Akrati Sachan</p>
-                        </div>
-                    </div>
-                </div>
-            </div> 
-
-
                                      <!-- Adding new profile here -->
 
              <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
@@ -376,7 +286,7 @@ Her friends usually call her "Natasha", the informal version of "Natalia". She h
                 </div>
             </div>
 
-         
+            
     </main>
 
 
@@ -427,10 +337,8 @@ Her friends usually call her "Natasha", the informal version of "Natalia". She h
     <script src="scrollEffect.js "></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js "></script>
     <script src="./Scripts/Theme.js"></script>
-    <script src="./Scripts/search.js"></script>
+    <script src=".//Scripts/search.js"></script>
     <script src="./Scripts/suggestion.js"></script>
-
-
     <script>
 
         const swiper = new Swiper('.swiper', {
