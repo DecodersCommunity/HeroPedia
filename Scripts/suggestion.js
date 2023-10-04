@@ -1,3 +1,7 @@
+document.addEventListener("DOMContentLoaded", function () {
+    // Your code here
+
+
 // Select card titles, suggestion list, and search input elements
 const cardTitles = document.querySelectorAll(".card-title");
 const suggestionList = document.getElementById("suggestion-list");
@@ -93,4 +97,4 @@ document.addEventListener("click", function (event) {
         closeSuggestionList();
     }
 });
-
+});
