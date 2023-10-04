@@ -61,3 +61,18 @@ function displaySuggestions(input) {
     // Apply a border when suggestions are available
     suggestionList.style.border = "1px solid #444";
 }
+
+// Function to handle suggestion item click
+function handleSuggestionClick(event) {
+    // Get the text content of the clicked suggestion
+    const selectedSuggestion = event.target.textContent;
+    
+    // Set the search input value to the selected suggestion
+    document.getElementById("searchInput").value = selectedSuggestion;
+    
+    // Trigger the search function with the selected suggestion
+    search();
+}
+
+// Add click event listener to the suggestion list
+suggestionList.addEventListener("click", handleSuggestionClick);
