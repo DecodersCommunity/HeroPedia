@@ -54,8 +54,17 @@
                         </div>
                     </div>
                 </div>
-                <form class="nosubmit">
-                    <input class="nosubmit" type="search" placeholder="Search for Character">
+                <form id="search" name="search" class="nosubmit">
+                    <input onblur="notVisible()" onfocus="searching()" oninput="searching()" class="nosubmit" type="search" placeholder="Search for Character">
+                    <div id="search-container">
+                    <div id="search-div" >
+                       
+                    <img id="search-img1" height="48px" width="48px" >
+                      
+                     <p id="search-text">Hero name</p>
+                    </div>
+                    
+                </div>
                 </form>
     </div>
 
@@ -479,4 +488,5 @@ Hawkeye's story continued in the Disney+ series titled "Hawkeye" (2021), where h
             }
         });
     </script>
+    <script src="./Scripts/Search.js"></script>
 </body>
