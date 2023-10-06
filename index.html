@@ -23,6 +23,12 @@
     <a href="#" id="scrolltopBtn" class="to-top">
         <i class="fa fa-arrow-up"></i>
     </a>
+<!--     scroll buttons top to bottom -->
+    <button id="scrollToTopBtn">Scroll to Top</button>
+    <button id="scrollToBottomBtn">Scroll to Bottom</button>
+
+<!--     <script src="scroll.js"></script> -->
+
 
     <button class="bottom">
         <i class="fa fa-arrow-down"></i>
@@ -701,6 +707,43 @@ In the film, Captain Marvel's arrival on the battlefield with her iconic red, bl
                 prevEl: '.swiper-button-prev',
             }
         });
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+    const scrollToTopButton = document.getElementById("scrollToTopBtn");
+    const scrollToBottomButton = document.getElementById("scrollToBottomBtn");
+
+    // Function to scroll to the top of the page
+    scrollToTopButton.addEventListener("click", function () {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+
+    // Function to scroll to the bottom of the page
+    scrollToBottomButton.addEventListener("click", function () {
+        window.scrollTo({
+            top: document.documentElement.scrollHeight,
+            behavior: "smooth"
+        });
+    });
+
+    // Show or hide the buttons based on scroll position
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 100) {
+            scrollToTopButton.style.display = "block";
+        } else {
+            scrollToTopButton.style.display = "none";
+        }
+
+        if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 100) {
+            scrollToBottomButton.style.display = "none";
+        } else {
+            scrollToBottomButton.style.display = "block";
+        }
+    });
+});
     </script>
     <script src="./Scripts/Search.js"></script>
 </body>
@@ -759,6 +802,17 @@ In the film, Captain Marvel's arrival on the battlefield with her iconic red, bl
 
 
 <style>
+/*     button top to down */
+    button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
 .hero-header {
     position: relative;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('your-hero-background.jpg');
