@@ -23,7 +23,7 @@ body.dark-mode {
 }
 
 header.dark-mode {
-  background-color: #444;
+  background-color: #4440;
 }
 
 button.dark-mode {
@@ -139,6 +139,15 @@ body::-webkit-scrollbar-thumb {
   background: transparent;
   box-shadow: 0px 0px 0px 100000vh rgb(45, 42, 42);
   border-radius: 8px;
+}
+.loader{
+  position: fixed;
+  display: block;
+  z-index: 2;
+  width: 100%;
+}
+.swiper{
+  margin-top: 113px;
 }
 
 .box {
