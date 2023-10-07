@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <!-- <link href="https://allfont.net/allfont.css?fonts=ninja-naruto" rel="stylesheet" type="text/css" /> -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css" type="text/css">
+    <link
+        href="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.6qtY7eooQBTfiSVjtrLrGQHaEj%26pid%3DApi&f=1"
+        rel="icon" type="image/jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="assets/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <title>HeroPedia</title>
+</head>
+
+<body>
+    <a href="#" id="scrolltopBtn" class="to-top">
+        <i class="fa fa-arrow-up"></i>
+    </a>
+
+    <button class="bottom">
+        <i class="fa fa-arrow-down"></i>
+    </button>
+
+    <div class="loader">
+
+        <!-- Changed Navbar Content and Search box below the navbar -->
+
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light d-flex justify-content-between" id="navBackground"
+                style="background-color:#d7dee79c; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                <a class="navbar-brand brand1 heading" href="#" style="color: var(--col1);">
+                    <div id="animation" class="animate one">
+                        <span>H</span><span>e</span><span>r</span><span>o</span><span>P</span><span>e</span><span>d</span><span>i</span><span>a</span>
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link nav-home " href="./index.html"
+                            style="color: var(--col1); border: #1f1f1f solid ; border-radius: 20px; border-width: 2px; height: 45px; margin-top: 2px; ">Home</a>
+                        <div class="theme-btn nav-link">
+                            <button id="btn" class="btn btn-outline-dark btn-md" style=" border-radius: 30%;"
+                                onclick=""><i id="themeIcon" class="bi bi-brightness-high "></i></button>
+                        </div>
+                    </div>
+                </div>
+                <form id="search" name="search" class="nosubmit">
+                    <input onblur="notVisible()" onfocus="searching()" oninput="searching()" class="nosubmit" type="search" placeholder="Search for Character">
+                    <div id="search-container">
+                    <div id="search-div" >
+                       
+                    <img id="search-img1" height="48px" width="48px" >
+                      
+                     <p id="search-text">Hero name</p>
+                    </div>
+                    
+                </div>
+                </form>
+    </div>
+
+    </nav>
+
+
+    </header>
+    </div>
+
+
+
+    <main>
+
+        <div class="carouselContainer">
+            <div class="swiper">
+
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <div class="swiper-image">
+                            <div class="image">
+                                <img src="./assets/SuperHero_new.jpg.webp" alt="..">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="swiper-image">
+                            <div class="image">
+                                <img src="./assets/bg2.webp" alt="..">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                        <div class="swiper-image">
+                            <div class="image">
+                                <img src="./assets/bg3.jpg" alt="..">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev" style="width: 53px;height : 53px; margin-left: 18px;"></div>
+                <div class="swiper-button-next" style="width: 53px;height : 53px;margin-right: 18px;"></div>
+            </div>
+        </div>
+
+
+
+        <p align="center">
+        <h1 id="All">
+            <div>
+                <span>A</span><span>l</span><span>l</span>&nbsp;<span>Y</span><span>o</span><span>u</span><span>r</span>&nbsp<span>F</span><span>a</span><span>v</span><span>o</span><span>u</span><span>r</span><span>i</span><span>t</span><span>e</span>&nbsp<span>S</span><span>u</span><span>p</span><span>e</span><span>r</span><span>h</span><span>e</span><span>r</span><span>o</span><span>e</span><span>s</span>
+            </div>
+        </h1>
+        </p>
+        <hr width="70%">
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Do not alter the code above this line unless you want to improve/ fix the website -->
+
+        <!-- Card section starts -->
+        <div class="container" id="cont">
+
+            <!--Sample Batman card start-->
+            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+
+                         <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
+                        <img src="./images/batman.jpg.webp" alt="Batman" height="390px" width="300px">
+
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+
+                            <!-- Name of your superhero-->
+                            <h2 class="card-title">Batman</h2>
+
+                            <!-- Description of your superhero-->
+                            <p class="card-text">Batman is one of the most iconic and enduring superheroes in the world of comic books and pop culture. Created by artist Bob Kane and writer Bill Finger, Batman made his first appearance in Detective Comics #27 in 1939. Unlike many other superheroes, Batman possesses no superhuman abilities. Instead, he relies on his intelligence, physical prowess, and an array of high-tech gadgets to fight crime in Gotham City.At the core of Batman's character is Bruce Wayne, a billionaire philanthropist who witnessed the murder of his parents as a child. This traumatic event fueled his lifelong commitment to eradicating crime. Adopting the persona of Batman, he becomes a symbol of fear for criminals, donning a bat-themed costume and using his extensive martial arts training to combat villains. Batman's rogues' gallery includes iconic foes like the Joker, Two-Face, and the Penguin, each with their unique motivations and quirks. His unwavering dedication to justice and moral code make him a complex and compelling character, as he navigates the fine line between hero and vigilante. Over the decades, Batman has been portrayed in various media, including comic books, television series, animated shows, and numerous blockbuster films, cementing his status as a symbol of justice, darkness, and the enduring human spirit.</p>
+
+                            <hr>
+
+                            <!-- Contributors name-->
+                            <p>Contributed by- Kaustubh Dixit</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="container" id="cont">
+
+                <!--Sample Batman card start-->
+                <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+    
+                             <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
+                            <img src="https://images.squarespace-cdn.com/content/v1/52a86cb9e4b098a46d38a18c/1465307539068-ZPDYN0BDSS4H8SWRYB1U/captain-america-fan-art-tony-santiago.jpg?format=750w" alt="Captain-America" height="390px" width="300px">
+    
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+    
+                                <!-- Name of your superhero-->
+                                <h2 class="card-title">Captain America</h2>
+    
+                                <!-- Description of your superhero-->
+                                <p class="card-text">Captain America, also known as Steve Rogers, is a legendary superhero within the Marvel Universe and a beacon of unwavering heroism. Created during the height of World War II by Joe Simon and Jack Kirby, Captain America made his debut in Captain America Comics #1 in 1941. As the quintessential super-soldier, Steve Rogers represents the embodiment of valor, patriotism, and the indomitable spirit of America. Infused with superhuman strength, agility, and an impenetrable shield, he stands as a steadfast defender of justice, leading the charge against formidable adversaries, both on the battlefield and in the complex world of modern-day superheroism. Captain America's enduring legacy as a symbol of moral fortitude and courage continues to inspire generations, making him a beloved and iconic figure in the pantheon of superheroes.</p>
+    
+                                <hr>
+    
+                                <!-- Contributors name-->
+                                <p>Contributed by- Sourabh Sharma</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+             <!-- Adding new profile here -->
+
+            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+
+                        <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
+                        <img src="./images/Angry_Nagraj.jpg" alt="Nagraj" height="390px" width="300px">
+
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+
+                            <!-- Name of your superhero-->
+                            <h2 class="card-title">Nagraj</h2>
+
+                            <!-- Description of your superhero-->
+                            <p class="card-text"> Nagraj is a superhero appearing in Indian comic books published by Raj Comics[1] created in the late 1980s by Rajkumar Gupta.[2] Nagraj first appeared in the comics Nagraj GENL #14 which was written by Parshuram Sharma and illustrated by Pratap Mullick.
+                                After that Sanjay Ashtpure, Pratap Mullick, Chandu, Milind Misal and Vitthal Kamble alternately illustrated the character for 44 issues, ending in 1995 with Visarpi Ki Shadi.[3][4][5][6]                               
+                                Nagraj is believed to have been inspired by the mythological Ichchhadhari Nag (shapeshifting snakes) and historical Vishmanushya (venomous human).[7] His stories create a rich blend of mythology, fantasy, magic, and science fiction. Many of Nagraj's fans believe that, over time, Nagraj's comics have developed snake mythology of its own, which is unique to the popular Indian beliefs about snakes that are prevalent among the masses. </p>
+                            <hr>
+                             <!-- Contributors name-->
+                            <p>Contributed by- Kaustubh Dixit</p>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+
+              <!-- Adding new profile here -->
+            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                    <!-- Replace image_name_here with the complete name (with extension) of the image you uploaded -->
+                        <img src="./images/3552.jpg.webp " alt="Daredevil" height="390px" width="300px">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h2 class="card-title">Daredevil</h2>
+                            <p class="card-text">
+                              Daredevil is a character appearing in American comic books published by Marvel Comics. Created by writer-editor Stan Lee and artist Bill Everett, with an unspecified amount of input from Jack Kirby, the character first appeared in Daredevil #1 (April 1964).
+
+                            </p>
+                            <p>
+                            </p>
+                            <hr>
+                            <p>Contributed by- Yash Lawaniya</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Sample [Character Name] card end-->
+            <!--Add your card below this line -->
+
+            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+
+                        <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
+                        <img src="./images/ironman.jpg" alt="Ironman" height="390px" width="300px">
+
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+
+                            <!-- Name of your superhero-->
+                            <h2 class="card-title">IronMan</h2>
+
+                            <!-- Description of your superhero-->
+                            <p class="card-text">Iron Man is a superhero appearing in American comic books published by Marvel Comics. Co-created by writer and editor Stan Lee, developed by scripter Larry Lieber, and designed by artists Don Heck and Jack Kirby, the character first appeared in Tales of Suspense #39 in 1963, and received his own title with Iron Man #1 in 1968. Shortly after his creation, Iron Man was a founding member of a superhero team, the Avengers, with Thor, Ant-Man, Wasp and the Hulk. Iron Man stories, individually and with the Avengers, have been published consistently since the character's creation. </p>
+                            <hr>
+                             <!-- Contributors name-->
+                            <p>Contributed by- Rohan Kumar Singh</p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+              <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+
+                        <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
+                        <img src="./images/superman.jpg" alt="SuperMan" height="390px" width="300px">
+
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+
+                            <!-- Name of your superhero-->
+                            <h2 class="card-title">Superman</h2>
+
+                            <!-- Description of your superhero-->
+                            <p class="card-text">Clark Joseph Kent (né Kal-El), best known by his superhero persona Superman, is a superhero in the DC Extended Universe series of films, based on the DC Comics character of the same name created by Jerry Siegel and Joe Shuster. In the films, he is a survivor from the destroyed planet Krypton who lands on Earth and develops superhuman abilities due to environmental differences between the planets and their respective star systems. </p>
+                            <hr>
+                             <!-- Contributors name-->
+                            <p>Contributed by- Kaustubh Dixit</p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+          
+          
+          
+          
+          <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+
+                        <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
+                        <img src="./images/thor.jpg" alt="Thor" height="390px" width="300px">
+
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+
+                            <!-- Name of your superhero-->
+                            <h2 class="card-title">Thor</h2>
+
+                            <!-- Description of your superhero-->
+                            <p class="card-text">Thor is a prominent god in Germanic paganism. In Norse mythology, he is a hammer-wielding god associated with lightning, thunder, storms, sacred groves and trees, strength, the protection of humankind, hallowing, and fertility. Thor, deity common to all the early Germanic peoples, a great warrior represented as a red-bearded, middle-aged man of enormous strength, an implacable foe to the harmful race of giants but benevolent toward mankind. His figure was generally secondary to that of the god Odin, who in some traditions was his father; but in Iceland, and perhaps among all northern peoples except the royal families, he was apparently worshiped more than any other god. There is evidence that a corresponding deity named Thunor, or Thonar, was worshiped in England and continental Europe, but little is known about him. </p>
+                            <hr>
+                             <!-- Contributors name-->
+                            <p>Contributed by- Vipin Maurya</p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+                          <!-- Adding new profile here -->
+            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+
+                        <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
+                        <img src="./images/doctorstrange.jpg" alt="Ironman" height="390px" width="300px">
+
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+
+                            <!-- Name of your superhero-->
+                            <h2 class="card-title">Doctor Strange</h2>
+
+                            <!-- Description of your superhero-->
+                            <p class="card-text"> Doctor Strange, originally a Marvel Comics character created in 1963, underwent a fascinating evolution from page to screen. In the comics, he's Dr. Stephen Strange, a brilliant but arrogant neurosurgeon who turns to mysticism after a car accident wrecks his hands. He trains under the Ancient One to become the Sorcerer Supreme, safeguarding Earth from supernatural threats.
+In the Marvel Cinematic Universe (MCU), actor Benedict Cumberbatch portrays Doctor Strange. His 2016 solo film introduced audiences to the character's origin, emphasizing the mystical and mind-bending aspects. He later played vital roles in "Avengers: Infinity War" and "Avengers: Endgame."
+Doctor Strange's transition to film retained his complex character, mystical abilities, and signature artifacts like the Eye of Agamotto. The MCU also explores his role in the multiverse, expanding the narrative possibilities. This adaptation successfully brought the enigmatic world of magic to the big screen, making Doctor Strange a pivotal figure in the cinematic superhero landscape. </p>
+                            <hr>
+                             <!-- Contributors name-->
+                            <p>Contributed by- Shubham Tyagi</p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+
+             <!-- Adding new profile here -->
+
+            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+
+                        <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
+                        <img src="./images/captain-america-by-harsh.jpg" alt="CaptainAmerica" height="390px" width="300px">
+
+                    </div>
+                    
+                    <div class="col-md-8">
+                        <div class="card-body">
+
+                            <!-- Name of your superhero-->
+                            <h2 class="card-title">Captain America</h2>
+
+                            <!-- Description of your superhero-->
+                            <p class="card-text"> Captain America, a beloved Marvel Comics character, was created by Joe Simon and Jack Kirby and made his debut in 1941 during the height of World War II. Steve Rogers, his alter ego, was a frail and determined young man who, through a government experiment, transformed into a super-soldier with enhanced strength, agility, and endurance. Clad in his iconic red, white, and blue costume, Captain America wields a nearly indestructible vibranium shield, which he uses both defensively and offensively in his battles against villains and threats to humanity.
+Captain America's journey extended beyond the comic pages to the silver screen, with actor Chris Evans portraying him in the Marvel Cinematic Universe (MCU). Evans donned the shield in several films, including "Captain America: The First Avenger" (2011), "Captain America: The Winter Soldier" (2014), and "Captain America: Civil War" (2016). These movies not only showcased his action-packed adventures but also explored his character's moral dilemmas and his role as a leader within the Avengers. Captain America's appearances in the MCU contributed significantly to his enduring popularity and cemented his status as a cultural icon. </p>
+                            <hr>
+                             <!-- Contributors name-->
+                            <p>Contributed by- Harsh Gupta</p>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+
+            
+            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+
+                        <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
+                        <img src="./images/blackWidow.jpg" alt="BlackWidow" height="390px" width="300px">
+
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+
+                            <!-- Name of your superhero-->
+                            <h2 class="card-title">Black Widow</h2>
+
+                            <!-- Description of your superhero-->
+                            <p class="card-text"> The first and best-known Black Widow is a Russian agent trained as a spy, 
+                                martial artist, and sniper, and outfitted with an arsenal of high-tech weaponry, including a pair of 
+                                wrist-mounted energy weapons dubbed her "Widow's Bite". She wears no costume during her first few
+                                appearances but simply evening wear and a veil. Romanova eventually defects to the U.S. for reasons
+                                that include her love for the reluctant-criminal turned superhero archer, Hawkeye.After their breakup, the Widow moves to Los Angeles and becomes leader of the newly created and short-lived super team known as The Champions, consisting of her, Ghost Rider (Johnny Blaze), Hercules (with whom she has a brief romance), and former X-Men Angel and Iceman.
+
+Her friends usually call her "Natasha", the informal version of "Natalia". She has sometimes chosen the last-name alias "Romanoff". She has hinted to be a descendant of the deposed House of Romanov and a relation to Nicholas II of Russia.
+
+</p>
+                            <p><a href="https://en.wikipedia.org/wiki/Black_Widow_(Natasha_Romanova)" target="_blank">Black_Widow</a>
+</p>
+                            <hr>
+                             <!-- Contributors name-->
+                            <p>Contributed by- Akrati Sachan</p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+          
+          
+
+                                     <!-- Adding new profile here -->
+
+             <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                    <!-- Replace image_name_here with the complete name (with extension) of the image you uploaded -->
+                        <img src="./images/spiderman.jpg" alt="SpiderMan" height="390px" width="300px">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h2 class="card-title">SpiderMan</h2>
+                            <p class="card-text">One of the most iconic superhero characters ever created, SpiderMan that is Peter Parker is a high school student in New York City who is bitten by a genetically modified spider. He gains spider-like abilities, including superhuman strength, speed, and agility. He uses his powers to fight crime as the masked superhero Spider-Man. Spider-Man must also deal with the challenges of his personal life, such as the death of his parents and his relationship with his love interest, Mary Jane Watson.   
+                            </p>
+                            
+                            <hr>
+                            <p>Contributed by- Akhil Dubey</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          
+                      
+            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+
+                        <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
+                        <img src="./images/WonderWomen.jpg" alt="Wonder Woman" height="390px" width="300px">
+
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+
+                            <!-- Name of your superhero-->
+                            <h2 class="card-title">Wonder Woman</h2>
+
+                            <!-- Description of your superhero-->
+                            <p class="card-text">Wonder Woman is a 2017 superhero film based on the DC Comics character of the same name.
+                                Produced by Warner Bros. Pictures, DC Films, Atlas Entertainment and Cruel and Unusual Films,
+                                and distributed by Warner Bros., it is the fourth installment of the DC Extended Universe (DCEU),
+                                and a prequel/spin-off to Batman v Superman: Dawn of Justice (2016).Wonder Woman,a race of female warriors in Greek mythology.
+                                For the purpose of the Wonder Woman character, it was the Greek gods who gave her her powers.
+                                These powers include superhuman strength and speed as well as the ability to fly.Wonder Woman's origin 
+                                story (from Golden to Bronze Age) relates that she was sculpted from clay by her mother Queen Hippolyta 
+                                and was given a life as an Amazon, along with superhuman powers as gifts by the Greek gods.
+</p>
+                            <p><a href="https://en.wikipedia.org/wiki/Wonder_Woman_(2017_film)" target="_blank">Wonder_Woman</a>
+</p>
+                            <hr>
+                             <!-- Contributors name-->
+                            <p>Contributed by- Akrati Sachan</p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+          
+
+                <!-- Adding new profile here -->
+
+            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+
+                        <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
+                        <img src="./images/Hawkeye.webp" alt="Hawkeye" height="390px" width="300px">
+
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+
+                            <!-- Name of your superhero-->
+                            <h2 class="card-title">Hawkeye</h2>
+
+                            <!-- Description of your superhero-->
+                            <p class="card-text"> Hawkeye, portrayed by Jeremy Renner, has been a consistent presence in the Marvel Cinematic Universe (MCU) since his debut in "Thor" (2011). He played significant roles in "The Avengers" (2012), "Avengers: Age of Ultron" (2015), "Captain America: Civil War" (2016), and "Avengers: Endgame" (2019). In these films, Hawkeye showcased his unparalleled archery skills and unwavering dedication to his fellow heroes.
+The character's appearances in the MCU have provided glimpses into his personal life, including his family and the challenges he faces as a hero with no superpowers. His resilience and resourcefulness make him a relatable and admired figure.
+                        <br>
+Hawkeye's story continued in the Disney+ series titled "Hawkeye" (2021), where he teams up with Kate Bishop, a young archer, passing on his legacy. This series delved deeper into his character and explored the consequences of his actions as Ronin during the events of "Avengers: Endgame." Overall, Hawkeye's presence in the MCU has added depth and humanity to the superhero ensemble, emphasizing that even without superhuman abilities, individuals can make a significant impact as heroes. </p>
+                            <hr>
+                             <!-- Contributors name-->
+                            <p>Contributed by- Shubham Tyagi</p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                    <!-- Replace image_name_here with the complete name (with extension) of the image you uploaded -->
+                        <img src="./images/Plastic_Man.jpg" alt="Plastic Man" height="390px" width="300px">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h2 class="card-title">Plastic Man</h2>
+                            <p class="card-text">
+                                Plastic Man, also known as Patrick "Eel" O'Brian, is a character from DC Comics with a captivating origin story. Created by Jack Cole and first appearing in "Police Comics" #1 in 1941, Eel O'Brian started as a small-time crook and safecracker. His life took a dramatic turn when a heist gone wrong resulted in a chemical accident at the Crawford Chemical Works, infusing his body with the remarkable power to stretch, contort,
+                                and shape-shift. Embracing his newfound abilities, he adopted the alias "Plastic Man" and chose to use his powers for good, fighting crime and bringing criminals to justice. With the ability to stretch his body to incredible lengths, change his appearance at will, and a near-invulnerability, Plastic Man has become a beloved character in the DC Universe. His most iconic nemesis is the Joker, with whom he has had numerous 
+                                memorable encounters, showcasing the contrast between his elastic heroism and the Joker's chaotic villainy.
+                            </p>
+                             
+                            <hr>
+                            <p>Contributed by- Bharath Subu</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+ <!-- Adding new profile here -->
+
+            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+
+                        <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
+                        <img src="./images/black_panther" alt="Black Panther" height="390px" width="300px">
+
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+
+                            <!-- Name of your superhero-->
+                            <h2 class="card-title">Black Panther</h2>
+
+                            <!-- Description of your superhero-->
+                            <p class="card-text">﻿
+
+Black Panther is a character appearing in American comic books published by Marvel Comics. Created by writer-editor Stan Lee and artist-plotter Jack Kirby, the character first appeared in Fantastic Four #52 (July 1966) in the Silver Age of Comic Books.[1][2] Black Panther's real name is T'Challa, and he is depicted as the king and protector of the fictional African nation of Wakanda. Along with possessing enhanced abilities achieved through ancient Wakandan rituals of drinking the essence of the heart- shaped herb, T'Challa also relies on his proficiency in science, expertise in his nation's traditions, rigorous physical training, hand-to-hand combat skills, and access to wealth and advanced Wakandan technology to combat his enemies.
+Black Panther is the first protagonist of African descent in mainstream American comics, having debuted years before early black superheroes such as Marvel Comics' the Falcon (1969), Luke Cage (1972), and Blade (1973) or DC Comics' John Stewart in the role of Green Lantern (1971). In one comic book storyline, the Black Panther mantle is handled by Kasper Cole, a multiracial New York City police officer. Beginning as an impersonator, Cole would later take on the moniker of White Tiger and become an ally to T'Challa. The role of Black Panther and leadership of Wakanda was also given to T'Challa's sister Shuri while he was in a coma for a short time.
+Black Panther has made numerous appearances in various television shows, animated films, and video games. Chadwick Boseman portrayed T'Challa in Phase Three of the Marvel Cinematic Universe's films: Captain America: Civil War (2016), Black Panther (2018), Avengers: Infinity War (2018), and Avengers: Endgame (2019), and posthumously voiced alternate versions of the character in the first season of the animated series What If...? (2021); while Letitia Wright, who played Shuri in previous MCU films, took over the Black Panther mantle in Black Panther: Wakanda Forever (2022), following Boseman's death in 2020. </p>
+                            <hr>
+                             <!-- Contributors name-->
+                            <p>Contributed by- Mayank Pandey</p>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+              <!-- Adding new profile here -->
+
+            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+
+                        <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
+                        <img src="./images/Magneto.jpg" alt="Magneto" height="390px" width="300px">
+
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+
+                            <!-- Name of your superhero-->
+                            <h2 class="card-title">Magneto</h2>
+
+                            <!-- Description of your superhero-->
+                            <p class="card-text">Magneto is a character appearing in American comic books published by Marvel Comics, commonly in association with the X-Men. Created by writer Stan Lee and artist/co-writer Jack Kirby, the character first appeared in The X-Men #1 (cover-dated September 1963) as an adversary of the X-Men. </p>
+                            <hr>
+                             <!-- Contributors name-->
+                            <p>Contributed by- Amay Mishra</p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+
+                        <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
+                        <img src="./images/Ant_man.jpeg" alt="Ant Man" height="390px" width="300px">
+
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+
+                            <!-- Name of your superhero-->
+                            <h2 class="card-title">Ant Man</h2>
+
+                            <!-- Description of your superhero-->
+                            <p class="card-text">Ant-Man, also known as Scott Lang in the Marvel Universe, is a compelling superhero characterized by his unique ability to shrink down to the size of an ant while simultaneously gaining superhuman strength and agility. Created by Stan Lee, Larry Lieber, and Jack Kirby, Ant-Man first appeared in Tales to Astonish #27 in 1962.
+
+Scott Lang, portrayed by actor Paul Rudd in the Marvel Cinematic Universe, is a skilled engineer and master thief who stumbles upon the Ant-Man suit, designed by Dr. Hank Pym, the original Ant-Man. With the help of this suit and advanced Pym Particles technology, Lang becomes a formidable hero. Ant-Man's diminutive stature grants him incredible stealth and the ability to communicate with ants, which he uses to execute heists and combat threats.
+
+Despite his small size, Ant-Man plays a significant role in the Avengers and other superhero teams, showcasing that even the tiniest heroes can make a big impact. His humor, relatability, and inventive combat style make him a beloved character in the Marvel Universe.. </p>
+                            <hr>
+                             <!-- Contributors name-->
+                            <p>Contributed by- Shubham Vaishnav</p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+                <!-- Adding new profile here -->
+
+
+
+                 <!-- Adding new profile here -->
+
+            <div class="card mb-3 card-bg my-4" style="max-width: 100%;">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+
+                        <!-- Replace image_name_here by the complete name (with extension) of the image you uploaded -->
+                        <img src="./images/captain-marvel.jpg" alt="Captain Marvel" height="390px" width="300px">
+
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+
+                            <!-- Name of your superhero-->
+                            <h2 class="card-title">Captain Marvel</h2>
+
+                            <!-- Description of your superhero-->
+                            <p class="card-text">Captain Marvel, portrayed by Brie Larson, made her cinematic debut in the 2019 film "Captain Marvel." The movie explored her origin story, showing how Carol Danvers, a former U.S. Air Force pilot, gained her superhuman abilities and became Captain Marvel. It was set in the 1990s and featured her involvement in the Kree-Skrull War.
+
+Captain Marvel's role in "Avengers: Endgame" (2019) was crucial to the overarching narrative. She played a pivotal part in the epic battle against Thanos and helped the Avengers in their quest to reverse the effects of the Infinity Snap. Her immense powers, including flight, energy projection, and super strength, made her a formidable ally.
+
+In the film, Captain Marvel's arrival on the battlefield with her iconic red, blue, and gold suit provided a powerful moment of support for the Avengers. Although she had limited screen time in "Endgame," her presence was instrumental in the ultimate victory against Thanos and his forces, emphasizing her significance in the Marvel Cinematic Universe. </p>
+                            <hr>
+                             <!-- Contributors name-->
+                            <p>Contributed by- Vasu Aggarwal</p>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+
+          
+    </main>
+
+
+
+
+
+
+    <!-- <footer> -->
+
+    <!-- Do not alter the code below this line unless you want to improve the website -->
+
+    <!-- Footer ANd Contact Section  -->
+    <section class="contact-area " id="contact ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-lg-6 offset-lg-3 ">
+                    <div class="contact-content text-center ">
+                        <a href="./index.html "><img src="./assets/Decoders Community logo.png " alt="logo "></a>
+                        <p>There is immense power when a group of people with similar interests gets together to work
+                            toward the same goals. </p>
+                        <div class="hr "></div>
+                        <h6>Technology, Information and Internet Kanpur</h6>
+                        <div class="contact-social ">
+                            <ul>
+                                <li><a class="hover-target " href=" "><i class="fa fa-facebook-f "></i></a></li>
+                                <li><a class="hover-target "
+                                        href="https://www.linkedin.com/company/decoderscommunity/ "><i
+                                            class="fa fa-linkedin "></i></a></li>
+                                <li><a class="hover-target " href="https://github.com/DecodersCommunity/HeroPedia/tree/main"><i
+                                            class="fa fa-github "></i></a></li>
+                                <li><a class="hover-target " href=" "><i class=" fa fa-instagram "></i></a></li>
+                                <li><a class="hover-target " href=" "><i class="fa fa-envelope "></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js "
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous ">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js "
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns " crossorigin="anonymous ">
+        </script>
+    <script src="scrollEffect.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js "></script>
+    <script src="./Scripts/Theme.js"></script>
+
+
+    <script>
+
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            slidesPerView: 'auto',
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false
+            },
+            centeredSlides: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            }
+        });
+    </script>
+    <script src="./Scripts/Search.js"></script>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+.hero-header {
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('your-hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Logo Styles with Animation */
+.navbar-brand {
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    animation: fadeInDown 1s ease-out 0.5s forwards;
+}
+
+/* Navigation Links with Animation */
+.nav-link {
+    font-size: 18px;
+    margin: 0 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+/* When hovered, slide up and fade in */
+.nav-link:hover {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Theme Toggle Button Styles */
+.theme-btn {
+    margin-top: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+/* When hovered, slide up and fade in */
+.theme-btn:hover {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Header Text with Animation */
+.header-text {
+    font-size: 42px;
+    margin-top: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transform: scale(0.5);
+    animation: fadeInScaleUp 1s ease-out 1s forwards;
+}
+
+/* Search Box Styles with Animation */
+.search-form {
+    margin-top: 30px;
+    max-width: 300px;
+    margin: 0 auto;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+/* When focused, slide up and fade in */
+.search-input:focus {
+    outline: none;
+    border-color: #1f1f1f;
+    color: #1f1f1f;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Background Animation Styles (Optional) */
+.background-animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #ff0055, #00ffaa);
+    opacity: 0.5;
+    z-index: -1;
+    animation: backgroundAnimation 10s ease-in-out infinite;
+}
+
+/* Keyframe Animations */
+@keyframes fadeInDown {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInScaleUp {
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes backgroundAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+</style>
