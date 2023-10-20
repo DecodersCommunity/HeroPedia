@@ -3,6 +3,59 @@ html {
   margin: 0;
   padding: 0;
 }
+/* Dark mode styles */
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* Styles for elements in dark mode */
+.dark-mode a {
+  color: #bb86fc; /* Purple color for links in dark mode */
+}
+
+/* Additional dark mode styles for your specific elements */
+/* Dark Mode */
+.dark-mode {
+  --background-light: #121212;
+  --text-light: #ffffff;
+  --link-light: #bb86fc;
+}
+/* Dark Mode Button */
+.theme-btn button {
+  background-color: var(--link-light);
+  color: var(--background-light);
+  border: none;
+  border-radius: 30%;
+  padding: 10px;
+}
+
+.theme-btn button:hover {
+  background-color: #6200ea; /* Darker purple on hover */
+}
+
+:root {
+  /* Common Styles */
+  --font-family: 'Arial', sans-serif;
+  --border-radius: 20px;
+  
+  /* Light Mode */
+  --background-light: #ffffff;
+  --text-light: #000000;
+  --link-light: #007bff; /* Blue link color */
+  
+  /* Dark Mode */
+  --background-dark: #121212;
+  --text-dark: #ffffff;
+  --link-dark: #bb86fc; /* Purple link color */
+}
+
+
+/* Updated */
+body {
+  background-color: var(--background-light);
+  color: var(--text-light);
+}
 
 :root {
   --col1: #222;

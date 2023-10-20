@@ -48,10 +48,18 @@
                     <div class="navbar-nav">
                         <a class="nav-link nav-home " href="./index.html"
                             style="color: var(--col1); border: #1f1f1f solid ; border-radius: 20px; border-width: 2px; height: 45px; margin-top: 2px; ">Home</a>
-                        <div class="theme-btn nav-link">
+                        <!-- <div class="theme-btn nav-link">
                             <button id="btn" class="btn btn-outline-dark btn-md" style=" border-radius: 30%;"
                                 onclick=""><i id="themeIcon" class="bi bi-brightness-high "></i></button>
+                        </div> -->
+
+                        <div class="theme-btn nav-link">
+                            <button id="btn" class="btn btn-outline-dark btn-md" style=" border-radius: 30%;" onclick="toggleDarkMode()">
+                                <i id="themeIcon" class="bi bi-moon"></i>
+                            </button>
                         </div>
+                        
+                        
                     </div>
                 </div>
                 <form id="search" name="search" class="nosubmit">
@@ -801,6 +809,28 @@ Black Panther has made numerous appearances in various television shows, animate
                 prevEl: '.swiper-button-prev',
             }
         });
+     // Function to toggle dark mode
+function toggleDarkMode() {
+    const body = document.body;
+    const themeIcon = document.getElementById("themeIcon");
+
+    // Toggle dark mode class on body
+    body.classList.toggle("dark-mode");
+
+    // Toggle moon/sun icon
+    if (body.classList.contains("dark-mode")) {
+        // Dark mode is on
+        themeIcon.classList.remove("bi-moon");
+        themeIcon.classList.add("bi-sun");
+    } else {
+        // Dark mode is off
+        themeIcon.classList.remove("bi-sun");
+        themeIcon.classList.add("bi-moon");
+    }
+}
+
+
+
     </script>
     <script src="./Scripts/Search.js"></script>
 </body>
