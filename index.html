@@ -67,6 +67,7 @@
                 </div>
                 </form>
     </div>
+                <i class="ri-moon-line change-theme" id="theme-button"></i>
 
     </nav>
 
@@ -801,6 +802,34 @@ Black Panther has made numerous appearances in various television shows, animate
                 prevEl: '.swiper-button-prev',
             }
         });
+        const themeButton = document.getElementById('theme-button')
+const darkTheme = 'dark-theme'
+const iconTheme = 'ri-sun-line'
+
+// Previously selected topic (if user selected)
+const selectedTheme = localStorage.getItem('selected-theme')
+const selectedIcon = localStorage.getItem('selected-icon')
+
+// We obtain the current theme that the interface has by validating the dark-theme class
+const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
+const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'ri-moon-line' : 'ri-sun-line'
+
+// We validate if the user previously chose a topic
+if (selectedTheme) {
+  // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
+  document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
+  themeButton.classList[selectedIcon === 'ri-sun-line' ? 'add' : 'remove'](iconTheme)
+}
+
+// Activate / deactivate the theme manually with the button
+themeButton.addEventListener('click', () => {
+    // Add or remove the dark / icon theme
+    document.body.classList.toggle(darkTheme)
+    themeButton.classList.toggle(iconTheme)
+    // We save the theme and the current icon that the user chose
+    localStorage.setItem('selected-theme', getCurrentTheme())
+    localStorage.setItem('selected-icon', getCurrentIcon())
+})
     </script>
     <script src="./Scripts/Search.js"></script>
 </body>
@@ -954,6 +983,45 @@ Black Panther has made numerous appearances in various television shows, animate
     opacity: 0.5;
     z-index: -1;
     animation: backgroundAnimation 10s ease-in-out infinite;
+}
+    .change-theme{
+    font-size: 1.25rem;
+    color:rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+body.dark-theme{
+    
+--title-color: hsl(40,48%,90%);
+--text-color: hsl(40,12%,70%);
+--body-color: hsl(40,12%,16%);
+--container-color:hsl(40,20%,8%);
+
+}
+
+
+.dark-theme .home__profession{
+    text-shadow: 0 0 6px hsl(42, 20%, 12%);
+}
+.dark-theme:is(.nav__menu,.scrollup){
+    background-color: hsl(42, 20%, 12%);
+}
+
+
+
+
+
+
+.dark-theme::-webkit-scrollbar{
+    background-color: hsl(40,16%,15%);
+}
+
+.dark-theme::-webkit-scrollbar-thumb{
+    background-color: hsl(40,16%,25%);
+}
+
+.dark-theme::-webkit-scrollbar-thumb:hover{
+    background-color: hsl(40,16%,35%);
 }
 
 /* Keyframe Animations */
